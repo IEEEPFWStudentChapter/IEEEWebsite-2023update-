@@ -1,0 +1,258 @@
+/*
+div.header {
+	display: inline-block;
+  	width: 100px;
+  	height: 100px;
+  	padding: 5px;
+  	 
+} not what I wanted to achieve :(	*/
+
+
+
+/* "inherit" used here gets rid of default styles for links such as being blue before click, purple after, and having an underline:*/
+a:link { 
+	color: inherit; text-decoration: none /*underline*/; 
+}
+a:visited { 
+	color: inherit; text-decoration: none; 
+}
+a:hover { 
+	color: inherit; text-decoration: none; 
+}
+a:active { 
+	color: inherit; text-decoration: none; 
+}
+
+div.header {
+	display: inline-flex; /*Aligns icon and text by center instead of 
+							bottom of block*/
+	/*position: absolute;*/
+	/*text-align: center; already did in headerText*/
+	width: 100%; /*makes div span across screen not just one section*/
+	justify-content: center; /*actually centers block itself*/
+	/* position: fixed; */
+
+}
+
+p.headerText { /*content containing both image and text of header*/
+	/*position: static;*/
+	/*text-align: center;*/ /*does not affect anything.  not
+							established in html file either.
+							only the entire header is center-
+							ed ("justify-content")*/
+	margin: 25px 5px; 
+	margin-right: 25%;
+	/*<font color="#3F3D56"; style="font-family: Inter;">*/
+	font-family: Inter;
+	font-size: 20px;
+	color: #3F3D56;
+
+	/*align-content: center;*/
+	/*left: 200px;*/
+	/*top: 20px;*/
+}
+
+
+font.fontspecific:hover {
+	color: #0152A1;
+}
+
+img.IEEEimage {
+	/*position: absolute;*/
+	/*right: 200px;*/
+	/*margin: 5px 5px;*/
+	margin-right: 5%;
+	/*margin-right: 200px;*/
+	/*top: 200px;*/
+}
+
+div.backgroundSpace {
+	height: 100%;
+	background-attachment: fixed;
+	background-size: cover;
+	overflow-x: hidden;
+	/*overflow-y: scroll;*/ /*adds a scroll bar but you can't move page with it because there is no overflow or anything to view/hide*/
+}
+
+
+div.welcomeMsg {
+	justify-content: center;
+}
+
+p.welcomeTitle {
+	justify-content: center;
+	/*text-align: center;*/
+	/*margin-left: 50%;*/
+	width: 100%; /*NOT to be confused with width of PAGE.  this is the
+					width of the text itself*/
+	font-family: Inter;
+	font-weight: bold;
+	color: #3F3D56;
+	font-size: 72px;
+	margin: 30px 200px;
+}
+
+p.welcomeBody{
+	justify-content: center;
+	/*width:  25%;*/
+	font-family: Inter;
+	font-size: 36px;
+	margin: -30px 200px;
+}
+
+button.welcomeBtn {
+	margin: 50px 200px;
+	font-size: 24px;
+	font-family: Inter;
+	font-weight: bold;
+	color: white;
+	background-color: #0152A1;
+	padding: 24px 54px;
+	border-radius: 90px;
+	border: 2px solid #0152A1; /*Unfortunately, with a border enabled, it looks
+								/*like the button is not be toggled despite clicking*/
+}
+button.welcomeBtn:hover {
+	background-color: #3F3D56;
+	border: 2px solid #3F3D56;
+}
+
+img.theDude {
+	float: right; 
+	margin-right: 8%;
+	margin-top: -10%;
+}
+
+/* --------------------------------------------------------------------- */
+
+/* Rest of content past welcome screen below: */
+
+.line {
+	height: 2px;
+	width: 75%;
+	background-color: #555;
+	margin-left: 10%;
+}
+
+div.pageBlock {
+	margin-top: -20px; /* There was a wide gap between div's, so this was the best option*/
+	background-color: #E5E5E5;
+}
+
+p.pageTitle {
+	width: 50%; /*NOT to be confused with width of PAGE.  this is the
+					width of the text itself*/
+	margin-left: 10%;
+	font-family: Inter;
+	font-weight: bold;
+	color: #3F3D56;
+	font-size: 48px;
+}
+
+p.pageText {
+	width: 50%; /*NOT to be confused with width of PAGE.  this is the
+					width of the text itself*/
+	margin-left: 10%;
+	/* margin-right: 50%; does nothing */
+	font-family: Inter;
+	font-weight: bold;
+	color: #3F3D56;
+	font-size: 24px;
+}
+
+/* --------------------------------------------------------------------- */
+
+/* more specific:*/
+
+/* Car section */
+img.theCar {
+	float: right; /* white space in back for some reason.  Keep coding and hopefully it'll go away. */
+	margin-right: 10%;
+	margin-top: -15%;
+}
+
+button.viewBtn {
+	font-size: 24px;
+	font-family: Inter;
+	font-weight: bold;
+	color: #3F3D56;
+	/* background-color: #0152A1; */
+	padding: 24px 54px;
+	border-radius: 20px;
+	border: 2px solid #3F3D56; 
+}
+
+/* Events section */
+
+.eventSection {
+	display: inline-flex;
+	margin-left: 10%;
+	align-items: baseline;
+
+}
+
+.eventContainer {
+	display: inline-flex; /* before coding this, boxes were on top of each other, instead of side by side */
+	width: 360px;
+	height: 250px;
+	/* position:absolute; */
+}
+
+.eventLeft {
+	background-color: #3F3D56;
+	width: 150px;
+	height: 250px;
+	text-align: center;
+	/* align-items: baseline; */
+	/* align-content: center; */
+	/* align-items: center; */
+}
+
+.eventLeftText {
+	margin-top: 40%;
+	font-family: Inter;
+	font-weight: bold;
+	color: #FFFFFF;
+	font-size: 48px;
+}
+
+.eventRight {
+	background-color: #D4D4D4;
+	width: 210px;
+	height: 250px;
+	text-align: center;
+}
+.eventRightText {
+	margin-top: 20%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+font.eventTitle {
+	font-family: Inter;
+	font-weight: bold;
+	color: black;
+	font-size: 24px;
+}
+font.eventDescription {
+	font-family: Inter;
+	font-weight: bold;
+	color: black;
+	font-size: 18px;
+}
+
+/* --------------------------------------------------------------------- */
+
+.leaderSection {
+	display: inline-flex;
+	margin-left: 10%;
+	align-items: baseline;
+}
+
+.leaderText {
+	font-family: Inter;
+	font-weight: bold;
+	color: #3F3D56;
+	font-size: 18px;
+	position:relative;
+	/* margin-bottom: 50px; */
+}
