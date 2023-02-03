@@ -188,6 +188,8 @@ button.viewBtn {
 	display: inline-flex;
 	margin-left: 10%;
 	align-items: baseline;
+	align-content: center;
+	width: 100%
 
 }
 
