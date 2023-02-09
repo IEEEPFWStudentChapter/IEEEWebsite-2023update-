@@ -190,7 +190,6 @@ button.viewBtn {
 	align-items: baseline;
 	align-content: center;
 	width: 100%
-
 }
 
 .eventContainer {
@@ -245,16 +244,48 @@ font.eventDescription {
 /* --------------------------------------------------------------------- */
 
 .leaderSection {
+	/* width: 80%; */
 	display: inline-flex;
 	margin-left: 10%;
 	align-items: baseline;
+	/* text-align: center; */
+	/* padding: -5000%; */
+	
 }
 
 .leaderText {
+	/* margin-left: 30%; */
 	font-family: Inter;
 	font-weight: bold;
 	color: #3F3D56;
 	font-size: 18px;
 	position:relative;
-	/* margin-bottom: 50px; */
+	margin-right: 15%;
 }
+
+.leaderContainer{
+    float: left;
+	margin-right: 5%;
+}
+
+.leaderImages {
+	margin-left: 23%;
+	display: inline-flex;
+	width: 50%;
+	/* margin:auto; */ /*rarely works */
+
+}
+
+.leaderCaption {
+	display: block;
+	width: 80%;
+	text-align: center;
+	justify-content: baseline;
+}
+
+.leaderImage {
+	display: block;
+	
+
+}
+
