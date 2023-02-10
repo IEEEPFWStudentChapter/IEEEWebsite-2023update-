@@ -181,6 +181,10 @@ button.viewBtn {
 	border-radius: 20px;
 	border: 2px solid #3F3D56; 
 }
+button.viewBtn:hover {
+	background-color: #615e84;
+	border: 2px solid #615e84;
+}
 
 /* Events section */
 
@@ -290,6 +294,13 @@ font.eventDescription {
 
 /*Car Project Page*/
 /* --------------------------------------------------------------------- */
+
+.TopMenu:hover {
+	color: #0152A1;
+}
+.TopMenu {
+	font-size: 24px;	
+}
 
 .CarProjectPageBackground{
 	background-color: #e5e5e5;
