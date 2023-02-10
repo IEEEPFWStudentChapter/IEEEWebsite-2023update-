@@ -285,7 +285,150 @@ font.eventDescription {
 
 .leaderImage {
 	display: block;
-	
-
+	/* margin-bottom: 50px; */
 }
 
+/*Car Project Page*/
+/* --------------------------------------------------------------------- */
+
+.CarProjectPageBackground{
+	background-color: #e5e5e5;
+}
+
+.InsideTeamPhoto {
+    height: 516px;
+    margin-top: 41px;
+    width: 1440px;
+    margin-left: auto; 
+    margin-right: auto; 
+    display: block;
+}
+
+.ContentTitle {
+    width: 50%; 
+    display: block;
+    margin-top: 40px;
+    margin-left: auto; 
+    margin-right: auto; 
+	font-family: Inter;
+	font-weight: bold;
+	color: #3F3D56;
+	font-size: 48px;
+    text-align: center;
+}
+
+/*To make general info text centered, using h1's was easiest way*/
+.NoLineSpacing{
+	line-height: 0;
+}
+
+.VehicleClubDesc{
+    width: 50%; 
+	margin-top: 20px;
+    display: block;
+    margin-top: 40px;
+    margin-left: auto; 
+    margin-right: auto; 
+	font-family: Inter;
+	font-weight: bold;
+	color: #3F3D56;
+	font-size: 24px;
+}
+
+/*The div that contains the main content of car project page*/
+.ContentContainer{
+	align-content: center;
+	width: 100%;
+}
+
+/* Make a 1x1 grid and use position:relative to shift the bubble 
+away from the outside image. And this is what defines the grid and 
+the bubble/image is its children*/
+.GeneralInfoAndOutsidePhotoContainer{
+	display: grid;
+	margin-left: 50%; 
+	margin-right: 50%; 
+	position: relative; 
+	right: 200px;
+}
+
+/* This is the parent of the bubble and the general info text
+it goes in the 1x1 grid and gets pushed from the right by 500px
+its z index is 1 because it needs to be "cut off" by the image
+*/
+.GeneralInfoAndBubbleContainer{
+	grid-column: 1; 
+	grid-row: 1; 
+	position: relative; 
+	right: 500px; 
+	z-index: 1;
+}
+
+/*set width and hight of the bubble*/
+.GeneralInfoBubble{
+	height: 605px; 
+	width: 565px;
+}
+
+/*push text from bottom and right to make it look like
+its in the bubble*/
+.GeneralInfoTextContainer{
+	position:relative; 
+	bottom: 500px; 
+	right: 150px;
+}
+
+/*the container for the content of general info*/
+.GeneralInfoContentContainer{
+	text-align: center;
+}
+
+.GeneralInfoContentHeader{
+    color: #433e3e;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.GeneralInfoContentBody{
+    color: #433e3e;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*Set grid and column for the 1x1 grid to place it there
+apparently there is no need to shift it, it looks proper
+how it normally flows*/
+.OutsideImageAndTextContainer{
+	grid-column: 1; 
+	grid-row: 1;
+	z-index: 2;
+}
+
+.OutsideTeamPhoto{
+	width: 900px;
+	height: 800px;
+}
+
+/*Makes the text below image actually bottom left of image
+by using position relative and making it a higher z index to
+render it above the image*/
+.TextBelowOutsideImageContainer{
+	position: relative; 
+	bottom: 150px; 
+	right: 150px; 
+
+	z-index: 3; /*to make it display above the image*/
+
+	padding:40px; /*for the text to not touch the cutout*/
+
+	font-family: Inter; 
+	font-weight: bold; 
+	color: #3F3D56; 
+	font-size: 24px;  
+	background-color: #e5e5e5; 
+	width: 700px;
+}
