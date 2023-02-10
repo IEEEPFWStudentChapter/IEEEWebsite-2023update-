@@ -317,11 +317,6 @@ font.eventDescription {
     text-align: center;
 }
 
-/*To make general info text centered, using h1's was easiest way*/
-.NoLineSpacing{
-	line-height: 0;
-}
-
 .VehicleClubDesc{
     width: 50%; 
 	margin-top: 20px;
@@ -374,7 +369,7 @@ its z index is 1 because it needs to be "cut off" by the image
 its in the bubble*/
 .GeneralInfoTextContainer{
 	position:relative; 
-	bottom: 500px; 
+	bottom: 530px; 
 	right: 150px;
 }
 
