@@ -2,14 +2,12 @@
 <html lang="en">
   <head> <!-- for uploading to GITHUB!!!!!!-->
     <meta charset="UTF-8" />
-    <link rel="icon" href="/favicon.ico" />
     <link rel="stylesheet" href="formatting.css"
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IEEE: Car Project</title>
   </head>
   <body>
-    <div id="app"></div>
-    <div style="background-image: url('Vector.png')" class="backgroundSpace">
+    <div style="background-image: url('images/Vector.png')" class="backgroundSpace">
 
       <!-- HEADER BLOCK-->
       
@@ -17,7 +15,7 @@
       <div class="header">
           
           <!-- Header Image -->
-        <img src="logo-removebg-preview 1.png"; alt="logo"; position=absolute; width=175px; height=62.37px; class="IEEEimage">
+        <img src="images/IEEE_top_logo_transparent.png"; alt="logo"; position=absolute; width=175px; height=62.37px; class="IEEEimage">
           
           <!-- Header Text -->
         <p class="headerText">
@@ -50,13 +48,13 @@
         <p class="welcomeBody">Discover like-minded students through <br>the IEEE Student Chapter.</p>
         
         
-          <button class="welcomeBtn"> Learn More</button>
+          <button class="welcomeBtn" onclick="window.location = 'car_project.html'"> Learn More</button>
   
           <!-- <button class="welcomeBtn" onmouseover="this.style.backgroundcolor='black"; onmouseout="this.style.color='blue"> Learn More</button> -->
         <!-- onmouseover="this.style.backgroundcolor='black';" onmouseout="this.style.color='blue';" -->
       </div>
   
-      <img src="undraw_launching_re_tomg 1.svg"; alt="guy"; position=absolute; width=757.79px; height=603.38px; class="theDude">
+      <img src="images/undraw_launching_re_tomg 1.svg"; alt="guy"; position=absolute; width=757.79px; height=603.38px; class="theDude">
   
     </div> <!-- end of background image -->
 
@@ -75,14 +73,16 @@
       </p> <!-- "pageTitle" and "pageText" have a different format from the welcome page,
                                       and will be used throughout page -->
 
-      <p class="pageText">Sed ut perspiciatis unde omnis iste natus error sit<br>
-                          voluptatem accusantium doloremque laudantium, <br>
-                          totam rem aperiam, eaque ipsa quae ab illo inventore <br> 
-                          veritatis et quasi architecto beatae vitae dicta. <br><br>
-                        <button class="viewBtn">View Project</button>
-                        </p>
+      <p class="pageText">
+        Sed ut perspiciatis unde omnis iste natus error sit<br>
+        voluptatem accusantium doloremque laudantium, <br>
+        totam rem aperiam, eaque ipsa quae ab illo inventore <br> 
+        veritatis et quasi architecto beatae vitae dicta. <br><br>
 
-      <img src="undraw_electric_car_b-7-hl 1.svg"; alt="Car"; position=absolute; width=800px; class="theCar">
+        <button class="viewBtn"  onclick="window.location = 'car_project.html'">View Project</button>
+      </p>
+
+      <img src="images/undraw_electric_car_b-7-hl 1.svg"; alt="Car"; position=absolute; width=800px; class="theCar">
     
     
     <p style="font-size: 130px;"> <br></p> <!-- spacing between sections-->
@@ -161,51 +161,116 @@
 
       <!---------------------------------- Section 3 --------------------------------------------------------------------------------------->
       <div class="line"></div> <!-- line separating pages -->
-      
-      <p class="pageTitle"; id="level5"; style="margin-bottom: 0%;">
+      <div class="leaderGrid">
+        <p class="leaderTitle"; id="level5"; style="margin-bottom: 0%; grid-column:1" >
         <!-- <br> -->
-        PFW IEEE<br> 
-        Team Leaders
-      </p> 
+          PFW IEEE<br> 
+          Team Leaders
+        </p> 
       
-      <div class="leaderSection">
+        <div class="leaderSection" style="grid-column: 2">
       
-        <p class="leaderText">Sed ut perspiciatis unde omnis iste natus error sit
-          voluptatem accusantium doloremque laudantium,
-          totam rem aperiam, eaque ipsa quae ab illo inventore
-          veritatis et quasi architecto beatae vitae dicta. <br>
-        </p>
+          <p class="leaderText">Sed ut perspiciatis unde omnis iste natus error sit
+            voluptatem accusantium doloremque laudantium,
+            totam rem aperiam, eaque ipsa quae ab illo inventore
+            veritatis et quasi architecto beatae vitae dicta. <br>
+          </p>
 
         
+        </div>
       </div>
-      <p style="text-align: center; justify-content: center; display: flex">
-        <div class="leaderImages">
-          <!-- <ul style="list-style: none;"> -->
-            <!-- <li class="leaderContainer"> -->
-              <div style="width: 250px">
-                <img class= "leaderImage" src = "treasurer_photo.png"; style="width: 200px;">
-                <label class ="leaderCaption">Treasurer of IEEE Student Chapter</label>
-  
+      <p style="text-align: center; justify-content: center; display: flex"> <!--spacing-->
+        <div class="leaderSection">
+          <div class="leaderContainer" style="width: 50%">
+        <div class="leaderSection">  
+
+          <a href="#divOne" class="leaderContainer">
+              <img class= "leaderImage" src = "images/treasurer_photo.png"; style="width: 200px;">
+              <label class ="leaderCaption">Treasurer of IEEE Student Chapter</label>
+          </a>
+          
+          <div class="overlay" id="divOne">
+            <div class="wrapper">
+              <a href="#!" class="close">&times;</a>
+              <div style="float:left; padding-right:20px;">
+                <img class= "leaderImage" src = "images/treasurer_photo.png"; style="width: 200px;">
               </div>
-              
-            <!-- </li> -->
+              <div class="popupScreen">
+                
+              </div>
+
+              <span>
+                <span class="name">Mike Hurtle</span>
+                <br><br>
+                <span class="title">Treasurer of IEEE Student Chapter</span>
+                <br><br>
+                <span class="description-bold">Dedicated</span> <span class="description"> to leading part of the team in one of his favorite hobbies!</span>
+                  <span class="description-bold">Senior in Computer Engineering Tech</span> <span class="description">that’s </span> <span class="description-bold">passionate</span>
+                  <span class="description">about new technology and </span> <span class="description-bold">improvement of systems.</span>
+                  <br><br><br><br><br><br><br>
+              </span>
+            </div>
+          </div>
             
-            <!-- <li class="leaderContainer"> -->
-              <div style="width: 250px">
-                <img class= "leaderImage" src = "vicepresident_photo.png"; style="width: 200px;">
-                <span class ="leaderCaption">Vice President of IEEE Student Chapter</span>
-              </div>
-              
-            <!-- </li> -->
+          
+        
+          <a href="#divTwo" class="leaderContainer">
+              <img class= "leaderImage" src = "images/vicepresident_photo.png"; style="width: 200px;">
+              <span class ="leaderCaption">Vice President of IEEE Student Chapter</span>
+          </a>   
+        
            
-            <!-- <li class="leaderContainer"> -->
-              <div style="width: 250px">
-                <img class= "leaderImage" src = "president_photo.png"; style="width: 200px;">
-                <span class ="leaderCaption">President of IEEE Student Chapter</span>
+          <div class="overlay" id="divTwo">
+            <div class="wrapper">
+              <a href="#!" class="close">&times;</a>
+              <div style="float:left; padding-right:20px;">
+                <img class= "leaderImage" src = "images/vicepresident_photo.png"; style="width: 200px;">
               </div>
               
-            <!-- </li> -->
-          <!-- </ul> -->
+            
+              <span>
+                <span class="name">Josiah Beck</span>
+                <br><br>
+                <span class="title">Vice President of IEEE Student Chapter</span>
+                <br><br>
+                <span class="description-bold">Dedicated</span> <span class="description"> to leading part of the team in one of his favorite hobbies!</span>
+                  <span class="description-bold">Senior in Computer Engineering Tech</span> <span class="description">that’s </span> <span class="description-bold">passionate</span>
+                  <span class="description">about new technology and </span> <span class="description-bold">improvement of systems.</span>
+                  <br><br><br><br><br><br><br>
+              </span>
+            </div>
+          </div>
+          
+          <a href="#divThree" class="leaderContainer">
+              <img class= "leaderImage" src = "images/president_photo.png"; style="width: 200px;">
+              <span class ="leaderCaption">President of IEEE Student Chapter</span>
+            
+          </a> 
+           
+            
+          
+          <div class="overlay" id="divThree">
+            <div class="wrapper">
+              <a href="#!" class="close">&times;</a>
+              <div style="float:left; padding-right:20px;">
+                <img class= "leaderImage" src = "images/president_photo.png"; style="width: 200px;">
+              </div>
+              
+            
+          
+              <span>
+                <span class="name">Ben Edwards</span>
+                <br><br>
+                <span class="title">President of IEEE Student Chapter</span>
+                <br><br>
+                <span class="description-bold">Dedicated</span> <span class="description"> to leading part of the team in one of his favorite hobbies!</span>
+                  <span class="description-bold">Senior in Computer Engineering Tech</span> <span class="description">that’s </span> <span class="description-bold">passionate</span>
+                  <span class="description">about new technology and </span> <span class="description-bold">improvement of systems.</span>
+                  <br><br><br><br><br><br><br>
+              </span>
+            </div>
+          </div>
+
         </div>
       </p>
       
