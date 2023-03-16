@@ -183,6 +183,7 @@ button.viewBtn {
 	border: 2px solid #3F3D56; 
 }
 button.viewBtn:hover {
+	color: white;
 	background-color: #615e84;
 	border: 2px solid #615e84;
 }
