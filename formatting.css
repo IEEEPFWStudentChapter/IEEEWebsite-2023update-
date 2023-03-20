@@ -247,6 +247,21 @@ font.eventDescription {
 	font-size: 18px;
 }
 
+.eventContainerViewAll {
+	height: 250px;
+	width: 90%;
+	display: inline-flex;
+	align-content: center;
+	margin-left: 5%;
+	margin-right: 30%;
+}
+
+.eventRightViewAll {
+	background-color: #D4D4D4;
+	width: 80%;
+	height: 250px;
+	text-align: center;
+}
 /* --------------------------------------------------------------------- */
 
 .leaderTitle {
@@ -473,6 +488,7 @@ render it above the image*/
 	transition: opacity 500ms;
 	visibility: hidden;
 	opacity: 0;
+	z-index: 2;
 }
 
 .overlay:target{
@@ -495,7 +511,7 @@ render it above the image*/
 .wrapper .close{
 	position: absolute;
 	top: 20px;
-	right: 30px;
+	right: 3%;
 	transition: all 200ms;
 	font-size: 30px;
 	font-weight: bold;
