@@ -305,7 +305,7 @@ font.eventDescription {
 }
 
 .leaderSection {
-	margin-left: 23%;
+	margin-left: 13%;
 	display: inline-flex;
 	width: 50%;
 	/* margin:auto; */ /*rarely works */
@@ -319,7 +319,7 @@ font.eventDescription {
 
 .leaderCaption {
 	display: block;
-	width: 80%;
+	width: 90%;
 	text-align: center;
 	justify-content: baseline;
 }
